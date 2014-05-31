@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/weathercock/KTUserDefaults"
   s.authors      = { "Kazamidori" => "http://weathercock.tmrnk.com/" }
   s.source       = { :git => "https://github.com/weathercock/KTUserDefaults.git", :tag => "v#{s.version}" }
-  s.platform     = :ios, '5.0'
+  s.platform     = :ios, '4.3'
   s.source_files = 'KTUserDefaults'
   s.requires_arc = true
 end
