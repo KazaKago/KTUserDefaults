@@ -5,7 +5,7 @@ iOS標準のNSUserDefaultsを拡張し、synchronizeが呼ばれることで初�
 synchronizeを行わないことで事実上のロールバックを可能にし、簡易的なトランザクションを実現します。  
 イメージとしてはAndroidのSharedPreferenceと同様の使い方をすることが可能です。  
 
-※UserDefaultsのロック等の機能は提供しておりません。
+※UserDefaultsのロック等の排他制御機能は提供しておりません。
 
 ##インストール##
 
@@ -40,7 +40,7 @@ KTUserDefaults *ktUserDefaults = [KTUserDefaults standardUserDefaults];
 //ここでは未保存です。
 
 //保存を実行
-[self.ktUserDefaults synchronize];
+[ktUserDefaults synchronize];
 
 //ここでは保存済みです。
 ```
